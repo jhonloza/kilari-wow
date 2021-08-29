@@ -22,3 +22,6 @@ Route::get('/kilariwow', function () {
 });
 Route::get('/kilariwow/register', [RegisterController::class, 'registro']);
 Route::post('/kilariwow/resultregister', [RegisterController::class, 'resultregister']);
+Route::get('/kilariwow/main', function () {
+    return view('layouts/main');
+});
