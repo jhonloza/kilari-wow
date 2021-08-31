@@ -5,10 +5,10 @@
  * This should be updated to the information of your CMaNGOS realmd database!
  */
 define('DB_HOST', 'localhost');
-define('DB_USERNAME', 'cmangos');
-define('DB_PASSWORD', '@DminContraseña2021');
-define('DB_DATABASE_NAME', 'realmd');
-define('DB_PORT', '3506');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'Jh0n-L0z@2021');
+define('DB_DATABASE_NAME', 'tbcrealmd');
+define('DB_PORT', '3306');
 
 /**
  * Set your GM level, expansion pack and more here.

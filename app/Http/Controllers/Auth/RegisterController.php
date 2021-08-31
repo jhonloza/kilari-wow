@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Middleware\UserCliente;
-use mysqli;
+use App\Models\Account;
 
 //use mysqli;
 
@@ -112,9 +112,28 @@ class RegisterController extends Controller
             $cliente = new UserCliente($username);
             $salt = $cliente -> generateSalt();
             $verified = $cliente -> generateVerifier($password);
-            $db = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE_NAME, DB_PORT);
-            mysqli_query($db, "INSERT INTO account (username, gmlevel, v, s, email, joindate, expansion) values ('$username','$gmLevel','$verified','$salt','$email','$joinDate','$expansion');");
-            echo '<script language="javascript">alert("Registro completado");history.go(-1);</script>';
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $acount = new Account();
+            $acount -> username = $username;
+            $acount -> gmlevel = $gmLevel;
+            $acount -> sessionkey = '';
+            $acount -> v = $verified;
+            $acount -> s = $salt;
+            $acount -> email = $email;
+            $acount -> joindate = $joinDate;
+            $acount -> lockedIp = $ip;
+            $acount -> failed_logins = 0;
+            $acount -> locked = 0;
+            $acount -> active_realm_id = 0;
+            $acount -> expansion = $expansion;
+            $acount -> mutetime = 0;
+            $acount -> locale = '';
+            $acount -> token = '';
+            $acount -> save();
+            //mysqli_query($db, "INSERT INTO account (username, gmlevel, v, s, email, joindate, expansion) values ('$username','$gmLevel','$verified','$salt','$email','$joinDate','$expansion');");
+            //echo "INSERT INTO account (username, gmlevel, v, s, email, joindate, expansion) values ('$username','$gmLevel','$verified','$salt','$email','$joinDate','$expansion');";
+            //echo '<script language="javascript">alert("Registro completado");history.go(-1);</script>';
+            echo 'REgistro Completo';
         } else{
             echo '<script language="javascript">alert("Las contraseñas no coinciden");history.go(-1);</script>';
         }
