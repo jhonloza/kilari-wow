@@ -1,0 +1,8 @@
+body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/693/892/917/world-of-warcraft-world-of-warcraft-the-burning-crusade-illidan-stormrage-video-games-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}

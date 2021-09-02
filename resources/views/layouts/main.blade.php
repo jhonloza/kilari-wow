@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/materialize.min.css">
+    <link rel="stylesheet" href="/src/css/kilari.css">
     <title>Kilari-WoW - @yield('title')</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
                     <li><a href="#howtoconnect">
                             <h4>Como Conectar</h4>
                         </a></li>
-                    <li><a href="#account">
+                    <li><a href="login">
                             <h4>Cuenta</h4>
                         </a></li>
                 </ul>

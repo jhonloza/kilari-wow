@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,4 @@ Route::get('/kilariwow', function () {
 });
 Route::get('/kilariwow/register', [RegisterController::class, 'registro']);
 Route::post('/kilariwow/resultregister', [RegisterController::class, 'resultregister']);
-Route::get('/kilariwow/main', function () {
-    return view('layouts/main');
-});
+Route::get('/kilariwow/login', [LoginController::class, 'index']);
