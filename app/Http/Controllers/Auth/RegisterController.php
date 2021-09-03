@@ -108,7 +108,15 @@ class RegisterController extends Controller
         $gmLevel = GM_LEVEL;
         /* Set expansion pack - The Burning Crusade. */
         $expansion = EXPANSION_PACK;
-        if($password == $vpassword){
+        if($username == null){
+            echo '<script language="javascript">alert("Llene los campos obligatorios *Nombre de usuario ");history.go(-1);</script>';
+        } elseif ($password == null){
+            echo '<script language="javascript">alert("Llene los campos obligatorios *Contraseña ");history.go(-1);</script>';
+        } elseif($vpassword == null){
+            echo '<script language="javascript">alert("Llene los campos obligatorios *Verificar contraseña ");history.go(-1);</script>';
+        } elseif($email == null){
+            echo '<script language="javascript">alert("Llene los campos obligatorios *Email ");history.go(-1);</script>';
+        } elseif($password == $vpassword){
             $cliente = new UserCliente($username);
             $salt = $cliente -> generateSalt();
             $verified = $cliente -> generateVerifier($password);
@@ -130,21 +138,10 @@ class RegisterController extends Controller
             $acount -> locale = '';
             $acount -> token = '';
             $acount -> save();
-            //mysqli_query($db, "INSERT INTO account (username, gmlevel, v, s, email, joindate, expansion) values ('$username','$gmLevel','$verified','$salt','$email','$joinDate','$expansion');");
-            //echo "INSERT INTO account (username, gmlevel, v, s, email, joindate, expansion) values ('$username','$gmLevel','$verified','$salt','$email','$joinDate','$expansion');";
-            //echo '<script language="javascript">alert("Registro completado");history.go(-1);</script>';
-            echo 'REgistro Completo';
+            echo '<script language="javascript">alert("Registro completo!");</script>';
+            return view('home');
         } else{
             echo '<script language="javascript">alert("Las contraseñas no coinciden");history.go(-1);</script>';
         }
-        /*if($password == $vpassword){
-            $client = new UserClient($username);
-            $salt = $client -> generateSalt();
-            $verified = $client -> generateVerifier($password);
-        } else{*/
-            //echo '<script language="javascript">alert("Las contraseñas no coinciden");history.go(-1);</script>';
-        /*}*/
-            //return $username.'--'.$password.'--'.$vpassword.'--'.$email.'--'.$joinDate.'--'.$gmLevel.'--'.$expansion.'--';
-
-        }
+    }
 }

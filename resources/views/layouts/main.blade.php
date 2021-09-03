@@ -30,7 +30,7 @@
                     <li><a href="#howtoconnect">
                             <h4>Como Conectar</h4>
                         </a></li>
-                    <li><a href="login">
+                    <li><a href="/kilariwow/login">
                             <h4>Cuenta</h4>
                         </a></li>
                 </ul>
@@ -59,7 +59,7 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="#account">
+        <li><a href="/kilariwow/login">
                 <h2>Cuenta</h2>
             </a></li>
     </ul>

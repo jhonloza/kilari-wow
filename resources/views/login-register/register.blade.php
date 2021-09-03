@@ -13,7 +13,7 @@
     @section('content')
     <script src="/materialize.min.js"></script>
     <br><br>
-    <div class="row">
+    <div class="row fomularioregistro">
         <div class="col s12 m12 l12 xl12">
             <div class="col m2 l2 xl2"></div>
             <div class="col m8 l8 xl8">
