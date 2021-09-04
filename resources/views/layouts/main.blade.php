@@ -16,7 +16,7 @@
         <nav class="transparent">
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo center">
-                    <img id="logowow" src="" alt="">
+                    <img id="logowow" src="/src/img/logo.png" alt="">
                 </a>
                 <ul class="left hide-on-med-and-down">
                     <li><a href="#notice">
@@ -30,7 +30,7 @@
                     <li><a href="#howtoconnect">
                             <h4>Como Conectar</h4>
                         </a></li>
-                    <li><a href="/kilariwow/login">
+                    <li><a href="/login">
                             <h4>Cuenta</h4>
                         </a></li>
                 </ul>
@@ -59,7 +59,7 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="/kilariwow/login">
+        <li><a href="/login">
                 <h2>Cuenta</h2>
             </a></li>
     </ul>

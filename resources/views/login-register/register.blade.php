@@ -55,7 +55,7 @@
                     </div>
                 </form>
                 <div class="row"> --- o --- </div>
-                <div class="row"> Ya tienes cuenta? Ingresa <a href="/kilariwow/login">aqui</a> </div>
+                <div class="row"> Ya tienes cuenta? Ingresa <a href="/login">aqui</a> </div>
             </div>
             <div class="col m2 l2 xl2"></div>
         </div>

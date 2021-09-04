@@ -38,12 +38,12 @@
                     <div class="row">
                         <div class="col m4 l4 xl4"></div>
                         <div class="col m4 l4 xl4">
-                            <input type="submit" value="Registrar">
+                            <input type="submit" value="Ingresar">
                         </div>
                         <div class="col m4 l4 xl4"></div>
                     </div>
                     <div class="row">--- o ---</div>
-                    <div class="row">No tienes cuenta? registrate <a href="/kilariwow/register">aqui</a></div>
+                    <div class="row">No tienes cuenta? registrate <a href="/register">aqui</a></div>
 
                 </form>
             </div>

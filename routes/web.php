@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
 
@@ -13,13 +14,13 @@ use App\Http\Controllers\Auth\RegisterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/kilariwow', function () {
+});*/
+Route::get('/', function () {
     return view('home');
 });
-Route::get('/kilariwow/register', [RegisterController::class, 'registro']);
-Route::post('/kilariwow/resultregister', [RegisterController::class, 'resultregister']);
-Route::get('/kilariwow/login', [LoginController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'registro']);
+Route::post('/register', [RegisterController::class, 'resultregister']);
+Route::get('/login', [LoginController::class, 'index']);
