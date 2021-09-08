@@ -24,7 +24,7 @@
                     <li><a href="#notice">
                             <h4>Noticias</h4>
                         </a></li>
-                    <li><a href="#about">
+                    <li><a href="/about">
                             <h4>Sobre Nosotros</h4>
                         </a></li>
                 </ul>
@@ -49,7 +49,7 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="#about">
+        <li><a href="/about">
                 <h2>Sobre Nosotros</h2>
             </a></li>
         <li>
