@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 body {
-    background-color: #000;
+    background-image: url('https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/bltb7f36fd666a1b189/6011a3339d2dcf0eda34fb42/og.jpg');
+    background-repeat: repeat-y;
+    background-size: contain;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -27,6 +29,12 @@ nav{
     width: 18vw;
 }
 
+#seccion1{
+    background-image: url('https://i.pinimg.com/originals/a0/09/84/a009841fe4b23bd268d760cd3d969dd1.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
 
 /*======================================
 =            banner-section            =
@@ -58,6 +66,7 @@ nav{
 	object-fit: cover;
 	width: 100%;
 	height: 100vh;
+    opacity: 0.9;
 }
 .banner{
 	position: relative;
@@ -127,7 +136,7 @@ nav{
 }
 
 @media only screen
-  and (min-device-width: 320px)
+  and (min-device-width: 200px)
   and (max-device-width: 600px)
   and (-webkit-min-device-pixel-ratio: 1) {
     #logowow{

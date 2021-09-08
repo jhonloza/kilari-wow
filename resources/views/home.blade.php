@@ -13,11 +13,13 @@
         <div class="banner-section">
             <div class="banner-content">
                 <h1>Bienvenidos a Kilari-wow</h1>
-                <p style="font-size: 28px;">Adentrate al mundo de World of Warcraft - The burning Crusade en su modo PVP.</p>
+                <p style="font-size: 28px;">Adentrate al mundo de World of Warcraft - The Burning Crusade en su modo PVP.</p>
                 <a href="/about" class="primary-btn">Informate</a>
+
             </div>
         </div>
     </section>
+    <p style="font-size: 28px;">set realmlist kilariwow.ddns.net</p>
 
 
 @endsection

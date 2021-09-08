@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\HowToConnectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::get('/register', [RegisterController::class, 'registro']);
 Route::post('/register', [RegisterController::class, 'resultregister']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
+Route::get('/howtoconnect', [HowToConnectController::class, 'index']);
+

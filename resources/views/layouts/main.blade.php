@@ -29,7 +29,7 @@
                         </a></li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#howtoconnect">
+                    <li><a href="/howtoconnect">
                             <h4>Como Conectar</h4>
                         </a></li>
                     <li><a href="/login">
@@ -55,7 +55,7 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="#howtoconnect">
+        <li><a href="/howtoconnect">
                 <h2>Como Conectar</h2>
             </a></li>
         <li>
