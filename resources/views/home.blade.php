@@ -2,16 +2,23 @@
 @section('title', 'Inicio')
 
 @section('content')
-    <br><br>
     <script src="/src/js/vars.js"></script>
 
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <img src="/src/img/logo.png" alt="https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt998a76999edee29c/601c75fd14a90a0bfc552cc4/media_image_bcc_nagrand_full.jpg" srcset="">
-                <div class="caption center-align"></div>
-            </li>
-        </ul>
-    </div>
+    <section class="banner">
+
+        <video muted autoplay loop class="video-section">
+            <source src="https://imgur.com/h70nk3O.mp4" type="video/mp4" media="">
+        </video>
+
+        <div class="banner-section">
+            <div class="banner-content">
+                <h1>Bienvenidos a Kilari-wow</h1>
+                <p style="font-size: 28px;">Adentrate al mundo de World of Warcraft - The burning Crusade en su modo PVP.</p>
+                <a href="/about" class="primary-btn">Informate</a>
+            </div>
+        </div>
+    </section>
+
+
 @endsection
 

@@ -11,9 +11,11 @@
 <body>
     <!--Header-->
     @section('sidebar')
+    <script src="/src/js/vars.js"></script>
     <script src="/materialize.min.js"></script>
     <div class="header">
-        <nav class="transparent">
+        <!--<nav class="transparent">-->
+        <nav class="barra transparent">
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo center">
                     <img id="logowow" src="/src/img/logo.png" alt="">
@@ -65,7 +67,7 @@
     </ul>
     @show
     <!--Content-->
-    <div class="container center">
+    <div class="center">
         @yield('content')
     </div>
     <!--Footer-->
