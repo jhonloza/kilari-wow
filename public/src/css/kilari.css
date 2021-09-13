@@ -35,6 +35,14 @@ nav{
     background-position-x: center;
     background-repeat: no-repeat;
 }
+#formulario {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+#menumain{
+    font-size: 16px;
+}
 
 /*======================================
 =            banner-section            =

@@ -14,7 +14,7 @@
             <div class="banner-content">
                 <h1>Bienvenidos a Kilari-wow</h1>
                 <p style="font-size: 28px;">Adentrate al mundo de World of Warcraft - The Burning Crusade en su modo PVP.</p>
-                <a href="/about" class="primary-btn">Informate</a>
+                <a href="/index.php/about" class="primary-btn">Informate</a>
 
             </div>
         </div>

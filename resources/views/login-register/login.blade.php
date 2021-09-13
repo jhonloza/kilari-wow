@@ -15,7 +15,7 @@
     <div class="row formulariologin">
         <div class="col s12 m12 l12 xl12">
             <div class="col m3 l3 xl3"></div>
-            <div class="col m6 l6 xl6">
+            <div id="fomulario" class="col m6 l6 xl6" style="background-color: #000; opacity: 0.8;">
                 <h3>Ingresa a tu cuenta</h3>
                 <form action="login" method="POST">
                     @csrf
@@ -51,7 +51,7 @@
                         <div class="col s3 m4 l4 xl4"></div>
                     </div>
                     <div class="row">--- o ---</div>
-                    <div class="row">No tienes cuenta? registrate <a href="/register">aqui</a></div>
+                    <div class="row">No tienes cuenta? registrate <a href="/index.php/register">aqui</a></div>
 
                 </form>
             </div>

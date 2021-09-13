@@ -24,15 +24,15 @@
                     <li><a href="#notice">
                             <h4>Noticias</h4>
                         </a></li>
-                    <li><a href="/about">
+                    <li><a href="/index.php/about">
                             <h4>Sobre Nosotros</h4>
                         </a></li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="/howtoconnect">
+                    <li><a href="/index.php/howtoconnect">
                             <h4>Como Conectar</h4>
                         </a></li>
-                    <li><a href="/login">
+                    <li><a href="/index.php/login">
                             <h4>Cuenta</h4>
                         </a></li>
                 </ul>
@@ -44,25 +44,25 @@
     </div>
     <ul id="menumain" class="sidenav">
         <li><a href="#notice">
-                <h2>Noticias</h2>
+                <h4>Noticias</h4>
             </a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="/about">
-                <h2>Sobre Nosotros</h2>
+        <li><a href="/index.php/about">
+                <h4>Sobre Nosotros</h4>
             </a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="/howtoconnect">
-                <h2>Como Conectar</h2>
+        <li><a href="/index.php/howtoconnect">
+                <h4>Como Conectar</h4>
             </a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="/login">
-                <h2>Cuenta</h2>
+        <li><a href="/index.php/login">
+                <h4>Cuenta</h4>
             </a></li>
     </ul>
     @show
